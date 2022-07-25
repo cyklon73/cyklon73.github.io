@@ -1,0 +1,121 @@
+
+@font-face {
+    font-family: 'GenomUltra';
+    src: url("../fonts/Geom Ultra.ttf");
+}
+
+
+
+
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: #f6f6f6;
+    height: 200rem;
+}
+
+nav
+{ 
+    position: fixed;
+    width: 100%;
+    height: 5rem;
+    background-color: #17202a;
+    box-shadow: 0px 5px 15px 5px rgba(0,0,0,0.25);
+}
+#nav-logo
+{   
+    position: absolute;
+    font-family: GenomUltra;
+    font-size: 2rem;
+    color: #2ecc71;
+    transform: translateY(50%);
+    margin-left: 3rem;
+}
+.navigation{
+    list-style: none;
+    font-size: 18px;
+    font-family: Roboto;
+    font-weight: bold;
+    color: white;
+    justify-content: space-between;
+    float: right;
+    
+}
+.nav-link
+{
+    display: inline-block;
+    margin-right: 2rem;
+    padding: 1rem 1.5rem;
+}
+.nav-link a
+{
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: white;
+    transition: color ease-in-out 100ms;
+}
+#nav-donate 
+{
+    margin-right: 5rem;
+    margin-left: 3rem;
+}
+#nav-donate a
+{
+    color:  #58d68d ;
+}
+@keyframes donateAnim
+{
+    0% { color: #58d68d}
+    60% { color: #ddece3}
+    100% { color: #58d68d}
+}
+#nav-donate:hover > a
+{
+    animation: donateAnim 1s ease-in-out infinite;
+}
+.nav-link:hover > a
+{
+    color: #c5ffc9;
+}
+
+
+.tutorials-dropdown
+{
+    list-style: none;
+    position: absolute;
+    margin-top: 2rem;
+    transform: translateX(-20%);
+    background-color: #17202a;
+    width: 6rem;
+    font-size: 15px;
+    display: flexbox;
+    flex-direction: column;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.25);
+    border-radius: 5px;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+.tutorials-dropdown li
+{
+    margin: 1rem 0;
+    margin-left: -1rem;
+}
+.tutorials-dropdown li::before
+{
+    position: absolute;
+    content: "";
+    background-color: white;
+    width: 65%;
+    height: 2px;
+    margin-top: 1.25rem;
+    margin-left: -0.5rem;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 250ms;
+}
+.tutorials-dropdown li:hover::before
+{
+    transform: scaleX(1);
+    transform-origin: left;
+}
