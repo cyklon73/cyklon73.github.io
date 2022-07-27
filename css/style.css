@@ -119,3 +119,11 @@ nav
     transform: scaleX(1);
     transform-origin: left;
 }
+
+
+deckgo-highlight-code
+{   
+    margin: 5rem;
+    width: fit-content;
+    border-radius: 20px;
+}
