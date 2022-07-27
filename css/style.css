@@ -126,4 +126,6 @@ deckgo-highlight-code
     margin: 5rem;
     width: fit-content;
     border-radius: 20px;
+    box-shadow: 10px 10px 15px 5px rgba(0,0,0,0.25);
+
 }
