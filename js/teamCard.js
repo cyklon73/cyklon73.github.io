@@ -74,16 +74,21 @@ function averageColor(imageElement) {
 
 var rgb;
 
-setTimeout(() => {
-    rgb = averageColor(
-        document.getElementById('img'));
+const ids = ["pbArtus", "pbCyklon"];
 
-    // Select the element and set its
-    // border color
-    document
-        .getElementById("img")
-        .style.borderColor =
-        'rgb(' + rgb.r + ','
-        + rgb.g + ','
-        + rgb.b + ')';
-}, 500)
+ids.forEach(id => {
+    console.log(id);
+    setTimeout(() => {
+        rgb = averageColor(
+            document.getElementsByClassName(id));
+
+        // Select the element and set its
+        // border color
+        document
+            .getElementById(id)
+            .style.borderColor =
+            'rgb(' + rgb.r + ','
+            + rgb.g + ','
+            + rgb.b + ')';
+    }, 500)
+});
