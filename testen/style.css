@@ -141,13 +141,13 @@ deckgo-highlight-code
     background-color:#282a36;
     display: flex;
     padding: 10rem;
-    text-align: center;
 }
-.team h2
+#team-title
 {
     font-family: GenomUltra;
     color: white;
     letter-spacing: 10px;
+    margin-left: 20rem;
 }
 .team-card
 {   
