@@ -147,10 +147,11 @@ deckgo-highlight-code
 .team h2
 {
     font-family: GenomUltra;
+    font-size: 10vw;
     color: white;
     letter-spacing: 10px;
     position: absolute;
-    margin-top: -5rem;
+    margin-top: -6rem;
 }
 .team-card
 {   
