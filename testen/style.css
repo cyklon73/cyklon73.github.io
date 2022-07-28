@@ -159,8 +159,7 @@ deckgo-highlight-code
 
 .team-new-line
 {
-    content: "";
-    width: 100%;
+    flex-basis: 100%;
 }
 
 .team-card
