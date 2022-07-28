@@ -125,6 +125,17 @@ nav
 }
 
 
+footer
+{
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    background-color: #17202a;
+}
+
+
+
+
 deckgo-highlight-code
 {   
     margin: 5rem;
