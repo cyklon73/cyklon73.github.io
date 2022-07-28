@@ -18,6 +18,7 @@ body
     height: 200rem;
 }
 
+
 nav
 { 
     position: fixed;
@@ -143,6 +144,7 @@ deckgo-highlight-code
     justify-content: center;
     padding-top: 10rem;
     padding-bottom: 5rem;
+    flex-wrap: wrap;
 }
 .team h2
 {
@@ -153,6 +155,12 @@ deckgo-highlight-code
     position: absolute;
     margin-top: -6rem;
 }
+
+.team-new-line
+{
+    width: 100%;
+}
+
 .team-card
 {   
     margin-left: 2rem;
@@ -163,7 +171,8 @@ deckgo-highlight-code
     display: block;
     position: relative;
     text-align: center;
-    transition: box-shadow 250ms ease-in-out;
+    transition: box-shadow 150ms ease-in-out;
+    margin-bottom: 2rem;
 }
 .team-card:hover
 {
