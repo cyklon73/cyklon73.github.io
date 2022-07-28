@@ -140,14 +140,17 @@ deckgo-highlight-code
     height: fit-content;
     background-color:#282a36;
     display: flex;
-    padding: 10rem;
+    justify-content: center;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
 }
-#team-title
+.team h2
 {
     font-family: GenomUltra;
     color: white;
     letter-spacing: 10px;
-    margin-left: 20rem;
+    position: absolute;
+    margin-top: -5rem;
 }
 .team-card
 {   
