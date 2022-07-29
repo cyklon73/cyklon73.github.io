@@ -328,6 +328,7 @@ footer ul li {
 }
 
 .footer-youtube-selection {
+    visibility: hidden;
     width: 20rem;
     height: 15rem;
     background-color: #282a36;
