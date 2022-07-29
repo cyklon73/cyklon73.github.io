@@ -84,11 +84,11 @@ nav
     color: #c5ffc9;
 }
 
-
 .tutorials-dropdown
 {
     list-style: none;
     position: absolute;
+    visibility: hidden;
     margin-top: 2rem;
     transform: translateX(-20%);
     background-color: #17202a;
