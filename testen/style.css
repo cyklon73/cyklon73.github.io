@@ -38,7 +38,6 @@ body
     margin: 0;
     padding: 0;
     background-color: #f6f6f6;
-    height: 200rem;
 }
 
 
@@ -325,12 +324,15 @@ footer ul li {
 }
 
 #footer-youtube-selection {
-    margin-left: 600px;
     width: 20rem;
     height: 15rem;
     background-color: #282a36;
     border-radius: 15px;
     box-shadow: 10px 10px 15px 5px rgba(0,0,0,0.25);
+    position: fixed;
+    margin: 20rem;
+    display: flex;
+    left: 50%;
 }
 
 
