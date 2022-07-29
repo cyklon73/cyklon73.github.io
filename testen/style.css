@@ -39,7 +39,7 @@ body
 {
     margin: 0;
     padding: 0;
-    background-color: #f6f6f6;
+    background-color: #303241;
 }
 
 
@@ -118,7 +118,7 @@ nav
     background-color: #17202a;
     width: 6rem;
     font-size: 15px;
-    display: flexbox;
+    display: flex;
     flex-direction: column;
     box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.25);
     border-radius: 5px;
@@ -179,7 +179,7 @@ deckgo-highlight-code
 {
     font-family: GenomUltra;
     font-size: 30px;
-    color: white;
+    color: #58826a;
     letter-spacing: 10px;
     position: absolute;
     margin-top: -6rem;
@@ -317,7 +317,7 @@ footer ul li {
     font-weight: bold;
     text-decoration: none;
     color: #d6d6d6;
-    transition: color 200ms ease-in-out;
+    transition: color 300ms ease-in-out;
     cursor: pointer;
 }
 
@@ -326,7 +326,7 @@ footer ul li {
     position: absolute;
     fill: #d6d6d6;
     height: 19px;
-    transition: fill 200ms ease-in-out;
+    transition: fill 300ms ease-in-out;
 }
 
 .footer-youtube-selection {
@@ -351,7 +351,13 @@ footer ul li {
     transform: translate(-100%);
     margin-top: 1rem;
     margin-left: -1rem;
+    transition: fill 300ms ease-in-out;
 }
+#footer-youtube-selection-close:hover
+{
+    fill: red;
+}
+
 .selections {
     list-style: none;
 }
@@ -378,6 +384,7 @@ footer ul li {
     width: 50px;
 }
 .selections a {
+    text-decoration: none;
     width: 1.5rem;
     color: white;
     position: absolute;
@@ -386,14 +393,16 @@ footer ul li {
     margin-top: 1rem;
     margin-right: -6.5rem;
     font-size: 20px;
+    font-family: Genom;
+    font-weight: bold;
+}
+.y-s-channel:hover {
+    /*font-size: 22px;*/
+    color: #a0a0a0;
 }
 .subCount {
     color: #22ff00;
     left: -20.5rem;
     font-family: Genom;
 
-}
-#footer-youtube-selection-close:hover
-{
-    fill: red;
 }
