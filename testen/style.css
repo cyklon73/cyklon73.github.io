@@ -270,12 +270,15 @@ deckgo-highlight-code
 footer
 {
     width: 100%;
-    padding-top: 2rem;
-    padding-bottom: 1rem;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
     background-color: #17202a;
 }
 
-footer ul {list-style: none;}
+footer ul {
+    list-style: none;
+    margin-left: 100px;
+}
 
 footer ul li {
     margin-top: 6px;
