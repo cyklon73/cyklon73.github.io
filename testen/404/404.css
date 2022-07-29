@@ -44,6 +44,29 @@ p
     font-family: Roboto;
     color: #8f9498;
 }
+a
+{
+    text-decoration: none;
+    color: #52626e;
+    position: relative;
+}
+a::after{
+    position: absolute;
+    content: "";
+    background-color: #52626e;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    margin-top: 1.25rem;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 250ms;
+}
+a:hover::after
+{
+    transform: scaleX(1);
+    transform-origin: left;
+}
 
 #duck {
     margin-left: calc(20% + 20rem);
