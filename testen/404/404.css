@@ -1,0 +1,85 @@
+
+@font-face {
+    font-family: 'GenomUltra';
+    src: url("../../fonts/Geom Ultra.ttf");
+}
+
+
+
+
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: #f6f6f6;
+    height: 200rem;
+
+
+}
+
+h1
+{
+    font-family: GenomUltra;
+    font-size: 5em;
+    color: #17202a;
+    margin-left: 20%;
+    margin-top: 15%;
+}
+
+h2
+{
+    font-family: GenomUltra;
+    font-weight: lighter;
+    font-size: 2em;
+    color: #17202a;
+    margin-left: 20%;
+    margin-top: -1rem;
+}
+
+p
+{
+    margin-left: 20%;
+    width: 40%;
+    font-weight: bold;
+    font-family: Roboto;
+    color: #8f9498;
+}
+a
+{
+    text-decoration: none;
+    color: #52626e;
+    position: relative;
+}
+a::after{
+    position: absolute;
+    content: "";
+    background-color: #52626e;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    margin-top: 1.25rem;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 250ms;
+}
+a:hover::after
+{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+#duck {
+    margin-left: calc(20% + 20rem);
+    margin-top: -20rem;
+    mix-blend-mode: multiply;
+    position: absolute;
+    float: left;
+    width: 15rem;
+    height: 15rem;
+}
+@media only screen and (max-width: 850px)
+{
+    #duck {visibility: hidden;}
+    h1 {font-size: 3rem;}
+    p {width: 75%;}
+}
