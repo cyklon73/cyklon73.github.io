@@ -313,6 +313,7 @@ footer ul li {
     text-decoration: none;
     color: #d6d6d6;
     transition: color 200ms ease-in-out;
+    cursor: pointer;
 }
 
 .footer-icons {
