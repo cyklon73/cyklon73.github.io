@@ -299,10 +299,15 @@ footer ul li {
 }
 
 .footer-icons {
+    display: inline-block;
     position: absolute;
     fill: #d6d6d6;
     height: 19px;
     transition: fill 200ms ease-in-out;
+}
+
+#footer-youtube-selection {
+    visibility: visible;
 }
 
 
