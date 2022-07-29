@@ -130,15 +130,6 @@ nav
 }
 
 
-footer
-{
-    width: 100%;
-    padding-top: 2rem;
-    padding-bottom: 1rem;
-    background-color: #17202a;
-}
-
-
 
 
 deckgo-highlight-code
@@ -252,10 +243,36 @@ deckgo-highlight-code
 {
     animation: pulse 1s;
     box-shadow: 0 0 0 1em transparent;
-    
+
 }
 @keyframes pulse
 {
     0% { box-shadow: 0 0 0 0 #2ecc71; }
 }
 
+footer
+{
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    background-color: #17202a;
+}
+
+.footer-link {
+    font-family: Genom;
+    font-weight: bold;
+    color: #aeaeae;
+}
+
+#footer-discord::after {
+    content: "";
+    position: absolute;
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-left: 0.25rem;
+    margin-top: -0.1rem;
+    background-color: #2ecc71;
+    mask-image: url("/img/icons/discord.svg");
+    mask-size: 1.5rem 1.5rem;
+    mask-repeat: no-repeat;
+}
