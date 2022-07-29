@@ -363,17 +363,17 @@ footer ul li {
 }
 #footer-youtube-selection ul li a {
     width: 100%;
-    margin-right: -8.5rem;
+    margin-right: -12rem;
 }
 .selections svg {
     width: 3.5rem;
     fill: #ff0000;
     position: absolute;
-    margin-left: -1.5rem;
+    margin-left: -1.25rem;
     margin-top: 0.15rem;
 }
 .selections img {
-    margin-left: 2rem;
+    margin-left: 6rem;
     border-radius: 10rem;
     width: 50px;
 }
@@ -389,7 +389,7 @@ footer ul li {
 }
 .subCount {
     color: #22ff00;
-    left: -18.8rem;
+    left: -20.5rem;
     font-family: Genom;
 
 }
