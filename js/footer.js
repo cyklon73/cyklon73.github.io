@@ -6,6 +6,7 @@ function toggleFooterYoutubeSelect() {
         document.getElementById("footer-youtube-selection").style.visibility = "hidden";
     } else {
         youtubeSelectToggeld = true;
+        getSubscribers();
         document.getElementById("footer-youtube-selection").style.visibility = "visible";
     }
 }

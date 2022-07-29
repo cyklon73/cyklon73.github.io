@@ -342,7 +342,7 @@ footer ul li {
     transform: translate(-50%, -50%);
     z-index: 999999999999999999999999999999999;
 }
-.footer-youtube-selection svg
+#footer-youtube-selection-close
 {
     width: 1.5rem;
     fill: #2ecc71;
@@ -363,8 +363,17 @@ footer ul li {
 }
 #footer-youtube-selection ul li a {
     width: 100%;
+    margin-right: -8.5rem;
+}
+.selections svg {
+    width: 3.5rem;
+    fill: #ff0000;
+    position: absolute;
+    margin-left: -1.5rem;
+    margin-top: 0.15rem;
 }
 .selections img {
+    margin-left: 2rem;
     border-radius: 10rem;
     width: 50px;
 }
@@ -378,7 +387,13 @@ footer ul li {
     margin-right: -6.5rem;
     font-size: 20px;
 }
-.footer-youtube-selection svg:hover
+.subCount {
+    color: #22ff00;
+    left: -18.8rem;
+    font-family: Genom;
+
+}
+#footer-youtube-selection-close:hover
 {
     fill: red;
 }
