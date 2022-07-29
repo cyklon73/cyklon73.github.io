@@ -10,6 +10,11 @@
 
 
 
+html
+{
+    scroll-behavior: smooth;
+}
+
 body
 {
     margin: 0;
@@ -153,7 +158,7 @@ deckgo-highlight-code
     background-color:#282a36;
     display: flex;
     justify-content: center;
-    padding-top: 10rem;
+    padding-top: 15rem;
     padding-bottom: 5rem;
     flex-wrap: wrap;
 }
@@ -174,7 +179,7 @@ deckgo-highlight-code
 
 .team-card
 {   
-    margin-left: 2rem;
+    margin-right: 2rem;
     width: 12rem;
     height: 15rem;
     background-color:#282a36;
@@ -222,4 +227,16 @@ deckgo-highlight-code
     font-weight: bold;
     font-size: 15px;
     margin-left: 20%;
+}
+.team-card button
+{
+    border-radius: 10rem;
+    width: 6rem;
+    height: 2rem;
+    background-color: transparent;
+    border-width: 3px;
+    border-color: #2ecc71;
+    border-style: solid;
+    color: #2ecc71;
+    font-family: GenomUltra;
 }
