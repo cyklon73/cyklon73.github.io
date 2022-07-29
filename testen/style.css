@@ -262,7 +262,31 @@ footer ul {list-style: none;}
 
 footer ul li {
     margin-top: 6px;
+    width: fit-content;
 }
+
+#youtube-svg
+{
+    margin-left: 2px;
+}
+
+#footer-li-dc:hover svg
+{
+    fill: #5865f2;
+}
+#footer-li-dc:hover a
+{
+    color: #5865f2;
+}
+#footer-li-yt:hover svg
+{
+    fill: #ff0000;
+}
+#footer-li-yt:hover a
+{
+    color: #ff0000;
+}
+
 
 .footer-link a {
     font-size: 17px;
@@ -270,41 +294,15 @@ footer ul li {
     font-family: Genom;
     font-weight: bold;
     text-decoration: none;
-    color: #aeaeae;
-    transition: color 300ms ease-in-out;
+    color: #d6d6d6;
+    transition: color 200ms ease-in-out;
 }
 
 .footer-icons {
     position: absolute;
-    fill: white;
+    fill: #d6d6d6;
     height: 19px;
-    transition: fill 300ms ease-in-out;
-}
-
-.footer-icons:hover {
-    height: 25px;
-}
-
-.footer-link a:hover {
-    font-size: 20px;
-}
-
-#footer-discord:hover {
-    color: #5865f2;
-}
-
-#footer-youtube:hover {
-    color: #ff0000;
-}
-
-#discord-svg:hover
-{
-    fill: #5865f2;
-}
-
-#youtube-svg:hover
-{
-    fill: #ff0000;
+    transition: fill 200ms ease-in-out;
 }
 
 
