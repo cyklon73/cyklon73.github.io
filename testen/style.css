@@ -240,11 +240,13 @@ deckgo-highlight-code
     color: #2ecc71;
     font-family: GenomUltra;
 }
+
 .team-card button:hover
 {
     animation: pulse 1s;
+    box-shadow: 0 0 0 1em transparent;
 }
 @keyframes pulse {
     0% { box-shadow: 0 0 0 0 #2ecc71; }
-    100% {box-shadow: 0 0 0 2em rgba(rgb(255, 0, 0),0);}
   }
+
