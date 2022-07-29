@@ -18,6 +18,7 @@ body
     height: 200rem;
 }
 
+
 nav
 { 
     position: fixed;
@@ -25,6 +26,7 @@ nav
     height: 5rem;
     background-color: #17202a;
     box-shadow: 0px 5px 15px 5px rgba(0,0,0,0.25);
+    z-index: 9999999999;
 }
 #nav-logo
 {   
@@ -112,7 +114,6 @@ nav
     width: 65%;
     height: 2px;
     margin-top: 1.25rem;
-    margin-left: -0.5rem;
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 250ms;
@@ -122,6 +123,17 @@ nav
     transform: scaleX(1);
     transform-origin: left;
 }
+
+
+footer
+{
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    background-color: #17202a;
+}
+
+
 
 
 deckgo-highlight-code
@@ -138,11 +150,31 @@ deckgo-highlight-code
 {
     width: 100%;
     height: fit-content;
-    background-color:#ffffff;
+    background-color:#282a36;
+    display: flex;
+    justify-content: center;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+    flex-wrap: wrap;
 }
+.team h2
+{
+    font-family: GenomUltra;
+    font-size: 30px;
+    color: white;
+    letter-spacing: 10px;
+    position: absolute;
+    margin-top: -6rem;
+}
+
+.team-new-line
+{
+    flex-basis: 100%;
+}
+
 .team-card
 {   
-    margin: 5rem;
+    margin-left: 2rem;
     width: 12rem;
     height: 15rem;
     background-color:#282a36;
@@ -150,8 +182,12 @@ deckgo-highlight-code
     display: block;
     position: relative;
     text-align: center;
+    transition: box-shadow 150ms ease-in-out;
+    margin-bottom: 2rem;
+}
+.team-card:hover
+{
     box-shadow: 10px 10px 15px 5px rgba(0,0,0,0.25);
-
 }
 .team-card img
 {
@@ -169,7 +205,7 @@ deckgo-highlight-code
 .team-card h1
 {
     font-size: 18px;
-    margin-top: 4rem;
+    margin-top: 0.5rem;
     transform: translateY(7.5rem);
     font-family: Roboto;
     color: #3acfed;
