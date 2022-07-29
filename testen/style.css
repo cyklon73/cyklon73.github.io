@@ -194,7 +194,9 @@ deckgo-highlight-code
 {   
     margin-right: 2rem;
     width: 12rem;
-    height: 15rem;
+    height: 20rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     background-color:#282a36;
     border-radius: 15px;
     display: block;
@@ -221,8 +223,6 @@ deckgo-highlight-code
     border-width: 4px;
 }
 .team-card h1
-
-
 {
     font-size: 20px;
     margin-top: 0.5rem;
