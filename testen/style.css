@@ -258,13 +258,53 @@ footer
     background-color: #17202a;
 }
 
-.footer-link {
-    font-family: Genom;
-    font-weight: bold;
-    color: #aeaeae;
+footer ul {list-style: none;}
+
+footer ul li {
+    margin-top: 6px;
 }
 
-svg:hover
-{
-    fill: red;
+.footer-link a {
+    font-size: 17px;
+    padding-left: 30px;
+    font-family: Genom;
+    font-weight: bold;
+    text-decoration: none;
+    color: #aeaeae;
+    transition: color 300ms ease-in-out;
 }
+
+.footer-icons {
+    position: absolute;
+    fill: white;
+    height: 19px;
+    transition: fill 300ms ease-in-out;
+}
+
+.footer-icons:hover {
+    height: 25px;
+}
+
+.footer-link a:hover {
+    font-size: 20px;
+}
+
+#footer-discord:hover {
+    color: #5865f2;
+}
+
+#footer-youtube:hover {
+    color: #ff0000;
+}
+
+#discord-svg:hover
+{
+    fill: #5865f2;
+}
+
+#youtube-svg:hover
+{
+    fill: #ff0000;
+}
+
+
