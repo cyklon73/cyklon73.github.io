@@ -307,7 +307,12 @@ footer ul li {
 }
 
 #footer-youtube-selection {
-    visibility: visible;
+    width: 20rem;
+    height: 15rem;
+    background-color: #282a36;
+    margin: 5rem;
+    border-radius: 15px;
+    box-shadow: 10px 10px 15px 5px rgba(0,0,0,0.25);
 }
 
 
