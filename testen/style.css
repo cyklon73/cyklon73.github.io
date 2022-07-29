@@ -324,16 +324,33 @@ footer ul li {
     transition: fill 200ms ease-in-out;
 }
 
-#footer-youtube-selection {
+.footer-youtube-selection {
     width: 20rem;
     height: 15rem;
     background-color: #282a36;
     border-radius: 15px;
     box-shadow: 10px 10px 15px 5px rgba(0,0,0,0.25);
     position: fixed;
-    margin: 20rem;
-    display: flex;
     left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999999999999999999999999999999999;
 }
+.footer-youtube-selection svg
+{
+    width: 1.5rem;
+    fill: #2ecc71;
+    position: relative;
+    left: 100%;
+    transform: translate(-100%);
+    margin-top: 1rem;
+    margin-left: -1rem;
+}
+.footer-youtube-selection svg:hover
+{
+    fill: red;
+}
+
+
 
 
