@@ -350,6 +350,32 @@ footer ul li {
     margin-top: 1rem;
     margin-left: -1rem;
 }
+.selections {
+    list-style: none;
+}
+#footer-youtube-selection ul {
+    margin-top: -2rem;
+}
+#footer-youtube-selection ul li {
+    margin-top: 1rem;
+}
+#footer-youtube-selection ul li a {
+    width: 100%;
+}
+.selections img {
+    border-radius: 10rem;
+    width: 50px;
+}
+.selections a {
+    width: 1.5rem;
+    color: white;
+    position: absolute;
+    right: 100%;
+    transform: translate(100%);
+    margin-top: 1rem;
+    margin-right: -6.5rem;
+    font-size: 20px;
+}
 .footer-youtube-selection svg:hover
 {
     fill: red;
