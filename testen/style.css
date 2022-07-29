@@ -252,8 +252,10 @@ deckgo-highlight-code
 {
     animation: pulse 1s;
     box-shadow: 0 0 0 1em transparent;
+    
 }
-@keyframes pulse {
+@keyframes pulse
+{
     0% { box-shadow: 0 0 0 0 #2ecc71; }
-  }
+}
 
