@@ -13,6 +13,7 @@
 html
 {
     scroll-behavior: smooth;
+    user-select: none;
 }
 
 body
@@ -155,7 +156,6 @@ deckgo-highlight-code
 }
 .team h2
 {
-    user-select: none;
     font-family: GenomUltra;
     font-size: 30px;
     color: white;
@@ -203,7 +203,6 @@ deckgo-highlight-code
 
 
 {
-    user-select: none;
     font-size: 20px;
     margin-top: 0.5rem;
     transform: translateY(7.5rem);
@@ -219,7 +218,6 @@ deckgo-highlight-code
 }
 .team-card li
 {
-    user-select: none;
     color: rgb(155, 155, 155);
     font-family: Roboto;
     font-weight: bold;
@@ -307,10 +305,10 @@ footer ul li {
 }
 
 #footer-youtube-selection {
+    margin-left: 600px;
     width: 20rem;
     height: 15rem;
     background-color: #282a36;
-    margin: 5rem;
     border-radius: 15px;
     box-shadow: 10px 10px 15px 5px rgba(0,0,0,0.25);
 }
