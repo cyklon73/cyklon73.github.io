@@ -10,6 +10,23 @@
 
 
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #3e3f4c;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #616271;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #707180;
+}
+
 html
 {
     scroll-behavior: smooth;
