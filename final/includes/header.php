@@ -6,7 +6,7 @@
     <link rel="icon" type="image/icon" href="/img/icons/favicon.png">
     <title>Duck Page</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_header_footer.css">
 
 
 </head>

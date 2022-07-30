@@ -1,0 +1,303 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@font-face {
+    font-family: 'GenomUltra';
+    src: url("../fonts/Geom Ultra.ttf");
+}
+@font-face {
+    font-family: 'Genom';
+    src: url("../fonts/Geom Light.ttf");
+}
+
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #3e3f4c;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #616271;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #707180;
+}
+
+html
+{
+    scroll-behavior: smooth;
+    user-select: none;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: #303241;
+}
+
+
+nav
+{ 
+    position: fixed;
+    width: 100%;
+    height: 5rem;
+    background-color: #17202a;
+    box-shadow: 0px 5px 15px 5px rgba(0,0,0,0.25);
+    z-index: 9999999999;
+}
+#nav-logo
+{   
+    position: absolute;
+    font-family: GenomUltra;
+    font-size: 2rem;
+    color: #2ecc71;
+    transform: translateY(50%);
+    margin-left: 3rem;
+}
+.navigation{
+    list-style: none;
+    font-size: 18px;
+    font-family: Roboto;
+    font-weight: bold;
+    color: white;
+    justify-content: space-between;
+    float: right;
+    
+}
+.nav-link
+{
+    display: inline-block;
+    margin-right: 2rem;
+    padding: 1rem 1.5rem;
+}
+.nav-link a
+{
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: white;
+    transition: color ease-in-out 100ms;
+}
+#nav-donate 
+{
+    margin-right: 5rem;
+    margin-left: 3rem;
+}
+#nav-donate a
+{
+    color:  #58d68d ;
+}
+@keyframes donateAnim
+{
+    0% { color: #58d68d}
+    60% { color: #ddece3}
+    100% { color: #58d68d}
+}
+#nav-donate:hover > a
+{
+    animation: donateAnim 1s ease-in-out infinite;
+}
+.nav-link:hover > a
+{
+    color: #c5ffc9;
+}
+
+.tutorials-dropdown
+{
+    list-style: none;
+    position: absolute;
+    visibility: hidden;
+    margin-top: 2rem;
+    transform: translateX(-20%);
+    background-color: #17202a;
+    width: 6rem;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.25);
+    border-radius: 5px;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+
+
+.tutorials-dropdown li
+{
+    margin: 1rem 0;
+    margin-left: -1rem;
+}
+.tutorials-dropdown li::before
+{
+    position: absolute;
+    content: "";
+    background-color: white;
+    width: 65%;
+    height: 2px;
+    margin-top: 1.25rem;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 250ms;
+}
+.tutorials-dropdown li:hover::before
+{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+
+
+
+deckgo-highlight-code
+{   
+    margin: 5rem;
+    width: fit-content;
+    border-radius: 15px;
+    box-shadow: 10px 10px 15px 5px rgba(0,0,0,0.25);
+}
+
+
+
+
+footer
+{
+    width: 100%;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    background-color: #17202a;
+}
+
+footer ul {
+    list-style: none;
+    margin-left: 100px;
+}
+
+footer ul li {
+    margin-top: 6px;
+    width: fit-content;
+}
+
+#youtube-svg
+{
+    margin-left: 2px;
+}
+
+#footer-li-dc:hover svg
+{
+    fill: #5865f2;
+}
+#footer-li-dc:hover a
+{
+    color: #5865f2;
+}
+#footer-li-yt:hover svg
+{
+    fill: #ff0000;
+}
+#footer-li-yt:hover a
+{
+    color: #ff0000;
+}
+
+
+.footer-link a {
+    font-size: 17px;
+    padding-left: 30px;
+    font-family: Genom;
+    font-weight: bold;
+    text-decoration: none;
+    color: #d6d6d6;
+    transition: color 300ms ease-in-out;
+    cursor: pointer;
+}
+
+.footer-icons {
+    display: inline-block;
+    position: absolute;
+    fill: #d6d6d6;
+    height: 19px;
+    transition: fill 300ms ease-in-out;
+}
+
+.footer-youtube-selection {
+    visibility: hidden;
+    width: 25rem;
+    height: 15rem;
+    background-color: #282a36;
+    border-radius: 15px;
+    box-shadow: 10px 10px 15px 5px rgba(0,0,0,0.25);
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999999999999999999999999999999999;
+}
+#footer-youtube-selection-close
+{
+    width: 1.5rem;
+    fill: #2ecc71;
+    position: relative;
+    left: 100%;
+    transform: translate(-100%);
+    margin-top: 1rem;
+    margin-left: -1rem;
+    transition: fill 300ms ease-in-out;
+}
+#footer-youtube-selection-close:hover
+{
+    fill: red;
+}
+
+.selections {
+    list-style: none;
+}
+#footer-youtube-selection ul {
+    margin-top: -2rem;
+}
+#footer-youtube-selection ul li {
+    margin-top: 1rem;
+}
+#footer-youtube-selection ul li a {
+    width: 100%;
+    margin-right: -12rem;
+}
+.selections svg {
+    width: 3.5rem;
+    fill: #ff0000;
+    position: absolute;
+    margin-left: -1.25rem;
+    margin-top: 0.15rem;
+}
+.selections img {
+    margin-left: 6rem;
+    border-radius: 10rem;
+    width: 50px;
+}
+.selections a {
+    text-decoration: none;
+    width: 1.5rem;
+    color: white;
+    position: absolute;
+    right: 100%;
+    transform: translate(100%);
+    margin-top: 1rem;
+    margin-right: -6.5rem;
+    font-size: 20px;
+    font-family: Genom;
+    font-weight: bold;
+}
+.y-s-channel:hover {
+    /*font-size: 22px;*/
+    color: #a0a0a0;
+}
+.subCount {
+    color: #22ff00;
+    left: -20.5rem;
+    font-family: Genom;
+}
