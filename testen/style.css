@@ -179,7 +179,7 @@ deckgo-highlight-code
 {
     font-family: GenomUltra;
     font-size: 30px;
-    color: #58826a;
+    color: #ffffff;
     letter-spacing: 10px;
     position: absolute;
     margin-top: -6rem;
@@ -229,13 +229,15 @@ deckgo-highlight-code
     transform: translateY(7.5rem);
     font-family: GenomUltra;
     font-weight: normal;
-    color: rgba(0, 255, 94, 0.6);
+    color: rgb(0, 201, 74);
 
 }
 .team-card ul
 {
-    text-align: left;
     margin-top: 8rem;
+    text-align: left;
+    margin-left: 20%;
+    
 }
 .team-card li
 {
@@ -243,7 +245,7 @@ deckgo-highlight-code
     font-family: Roboto;
     font-weight: bold;
     font-size: 15px;
-    margin-left: 20%;
+    
 }
 .team-card button
 {
@@ -256,6 +258,9 @@ deckgo-highlight-code
     border-style: solid;
     color: #2ecc71;
     font-family: GenomUltra;
+    position: absolute;
+    transform: translateX(-50%);
+    bottom: 2rem;
 }
 
 .team-card button:hover
@@ -404,5 +409,4 @@ footer ul li {
     color: #22ff00;
     left: -20.5rem;
     font-family: Genom;
-
 }
