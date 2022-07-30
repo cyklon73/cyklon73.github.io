@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
 @font-face {
     font-family: 'GenomUltra';
     src: url("../fonts/Geom Ultra.ttf");
@@ -8,7 +9,10 @@
     src: url("../fonts/Geom Light.ttf");
 }
 
-
+body
+{
+    height: 200rem;
+}
 
 /*                   T E A M   S E C T I O N                  */
 .team
@@ -123,3 +127,96 @@
     0% { box-shadow: 0 0 0 0 #2ecc71; }
 }
 /*               E N D                        */
+
+
+
+/*               I N D E X    T O P           */
+.index-logo
+{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.index-logo img
+{
+    width: 20rem;
+    height: 20rem;
+    margin-top: 6rem;
+    position: absolute;
+}
+
+.index-logo h1
+{
+    font-size: 3rem;
+    font-family: Lato;
+    font-weight: 100;
+    color: white;
+    margin-top: 25rem;
+    position: absolute;
+}
+
+.index-logo button {
+    width: 12rem;
+    height: 2.5rem;
+    margin-top: 30rem;
+    outline: none;
+    border: none;
+    border-radius: 10rem;
+    color: #111;
+    background: white;
+    font-size: 15px;
+    font-family: Roboto;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    transition: all 500ms ease-in-out;
+}
+
+.index-logo button:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10rem;
+}
+.index-logo button:hover {
+    background: #111;
+    color: white;
+}
+.index-logo button:hover:before {
+    opacity: 1;
+}
+.index-logo button:hover:after {
+    background: #111;
+}
+.index-logo button:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: white;
+    left: 0;
+    top: 0;
+    border-radius: 10rem;
+    transition: all 500ms ease-in-out;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
