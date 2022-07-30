@@ -78,7 +78,6 @@ var rgb;
 const ids = ["pbArtus", "pbCyklon", "pbGreenDuck"];
 
 ids.forEach(id => {
-    console.log(id);
     setTimeout(() => {
         rgb = averageColor(
             document.getElementById(id));

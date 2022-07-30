@@ -103,6 +103,7 @@ nav
 {
     animation: donateAnim 1s ease-in-out infinite;
 }
+
 .nav-link:hover > a
 {
     color: #c5ffc9;
@@ -113,7 +114,7 @@ nav
     list-style: none;
     position: absolute;
     visibility: hidden;
-    margin-top: 2rem;
+    margin-top: 1rem;
     transform: translateX(-20%);
     background-color: #17202a;
     width: 6rem;
@@ -125,6 +126,7 @@ nav
     padding-top: 2rem;
     padding-bottom: 1rem;
 }
+
 
 
 

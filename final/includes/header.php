@@ -25,9 +25,9 @@
         <ul class="navigation">
             <li class="nav-link" id="nav-home"><a href="index">Home</a></li>
             <li class="nav-link" id="nav-about"><a href="about">About</a></li>
-            <li class="nav-link" id="nav-tutorials"><a href="">Tutorials</a>
+            <li class="nav-link" id="nav-tutorials"><a id="nav-tutorials-link">Tutorials</a>
                 <ul class="tutorials-dropdown" id="nav-dropdown">
-                    <li><a href="https://www.youtube.com/watch?v=YJ01o9XuZGc&list=PLApKBBVrDUCdchtQXBXExXJYMb30CGRfg">Forge 1.18</a></li>
+                    <li><a target="_blank" href="https://www.youtube.com/watch?v=YJ01o9XuZGc&list=PLApKBBVrDUCdchtQXBXExXJYMb30CGRfg">Forge 1.18</a></li>
                     <li><a href="">Forge 1.19</a></li>
                     <li><a href="">Fabric 1.18</a></li>
                     <li><a href="">Irgendwas</a></li>
