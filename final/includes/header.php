@@ -7,6 +7,7 @@
     <title>Duck Page</title>
 
     <link rel="stylesheet" href="css/style_header_footer.css">
+    <link rel="stylesheet" href="css/style.css">
 
 
 </head>
@@ -16,17 +17,17 @@
     <script src="js/footer.js"></script>
     <script src="js/youtubeDataApi.js"></script>
     <script src="js/teamCard.js"></script>
-    <script src="js/dropdown.js"></script>
+    <script src="js/dropdown.js" defer></script>
 
 
     <nav>
         <a id="nav-logo">GreenDuck</a>
         <ul class="navigation">
-            <li class="nav-link" id="nav-home"><a href="">Home</a></li>
-            <li class="nav-link" id="nav-about"><a href="#team">About</a></li>
+            <li class="nav-link" id="nav-home"><a href="index">Home</a></li>
+            <li class="nav-link" id="nav-about"><a href="about">About</a></li>
             <li class="nav-link" id="nav-tutorials"><a href="">Tutorials</a>
-                <ul class="tutorials-dropdown" id="dropdown">
-                    <li><a href="">Forge 1.16</a></li>
+                <ul class="tutorials-dropdown" id="nav-dropdown">
+                    <li><a href="https://www.youtube.com/watch?v=YJ01o9XuZGc&list=PLApKBBVrDUCdchtQXBXExXJYMb30CGRfg">Forge 1.18</a></li>
                     <li><a href="">Forge 1.19</a></li>
                     <li><a href="">Fabric 1.18</a></li>
                     <li><a href="">Irgendwas</a></li>
