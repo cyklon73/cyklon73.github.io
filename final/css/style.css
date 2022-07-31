@@ -236,5 +236,7 @@
     
     .index-content-transition-svg {display: none;}
     .index-logo {position: inherit; margin-top: -5rem; height: fit-content; padding-bottom: 4rem;}
+    .index-logo button::after {display: none;}
+    .index-logo button::before {display: none;}
 
 }
