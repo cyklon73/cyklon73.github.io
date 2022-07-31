@@ -16,7 +16,7 @@
     <script type="module" src="https://unpkg.com/@deckdeckgo/highlight-code@latest/dist/deckdeckgo-highlight-code/deckdeckgo-highlight-code.esm.js"></script>
     <script src="js/footer.js"></script>
     <script src="js/youtubeDataApi.js"></script>
-    <script src="js/teamCard.js"></script>
+    <script src="js/teamCard.js" defer></script>
     <script src="js/dropdown.js" defer></script>
 
 

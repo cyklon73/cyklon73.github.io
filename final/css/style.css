@@ -9,10 +9,6 @@
     src: url("../fonts/Geom Light.ttf");
 }
 
-body
-{
-    height: 200rem;
-}
 
 /*                   T E A M   S E C T I O N                  */
 .team
@@ -138,6 +134,9 @@ body
     background-color: black;
     display: flex;
     justify-content: center;
+    z-index: -1;
+    position: fixed;
+    top: 0;
 }
 
 .index-logo img
@@ -219,4 +218,23 @@ body
     0% { background-position: 0 0; }
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
+}
+.index-content-transition-svg
+{
+    fill: #282a36;
+    margin-top: -40vh;
+    pointer-events: none;
+}
+.index-content
+{
+    margin-top: 100vh;
+    width: 100%;
+    height: 100vh;
+    background-color: #282a36;
+}
+@media only screen and (max-width: 1024px){
+    
+    .index-content-transition-svg {display: none;}
+    .index-logo {position: inherit; margin-top: -5rem; height: fit-content; padding-bottom: 4rem;}
+
 }
