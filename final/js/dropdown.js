@@ -29,5 +29,5 @@ function mouseOver(event){
 }
 
 function mouseLeave(event){
-    if (!open) document.getElementById("nav-dropdown").style.visibility = "hidden";
+    if (!isOpen) document.getElementById("nav-dropdown").style.visibility = "hidden";
 }
