@@ -1,8 +1,8 @@
 
 <?php
+    include_once "includes/meta/about.php";
     include_once "includes/header.php";
 ?>
-
 
 
 <div class="team" id="team">
