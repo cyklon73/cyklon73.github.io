@@ -1,5 +1,5 @@
 var dropdown = document.getElementById("nav-tutorials");
-var open = false;
+var isOpen = false;
 
 dropdown.addEventListener("click", toggle);
 dropdown.addEventListener("mouseover", mouseOver);
@@ -10,14 +10,14 @@ document.body.addEventListener('click', hideOnClickOutsite, true);
 function hideOnClickOutsite(event){
     const isClickInside = document.getElementById("nav-dropdown").contains(event.target);
 
-    if (!isClickInside && open) {
+    if (!isClickInside && isOpen) {
         document.getElementById("nav-dropdown").style.visibility = "hidden";
         opened = false;
     }
 }
 function toggle(event){
-    open = !open;
-    if (open) {
+    isOpen = !isOpen;
+    if (isOpen) {
         document.getElementById("nav-dropdown").style.visibility = "visible";
     } else {
         document.getElementById("nav-dropdown").style.visibility = "hidden";
@@ -25,7 +25,7 @@ function toggle(event){
 }
 
 function mouseOver(event){
-    if (!open) document.getElementById("nav-dropdown").style.visibility = "visible";
+    if (!isOpen) document.getElementById("nav-dropdown").style.visibility = "visible";
 }
 
 function mouseLeave(event){
